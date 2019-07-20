@@ -10,7 +10,7 @@ import UIKit
 import SceneKit
 import ARKit
 
-class rampPlacerVC: UIViewController, ARSCNViewDelegate {
+class rampPlacerVC: UIViewController, ARSCNViewDelegate,UIPopoverPresentationControllerDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     
@@ -70,6 +70,20 @@ class rampPlacerVC: UIViewController, ARSCNViewDelegate {
     
     func sessionInterruptionEnded(_ session: ARSession) {
         // Reset tracking and/or remove existing anchors if consistent tracking is required
+        
+    }
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
+    
+    @IBAction func onRampBtnPressed(_ sender: UIButton) {
+        let rampPickerVC = RampPickerVC(size: CGSize(width: 250, height: 500))
+        rampPickerVC.modalPresentationStyle = .popover
+        rampPickerVC.popoverPresentationController?.delegate = self
+        present(rampPickerVC, animated: true, completion: nil)
+        rampPickerVC.popoverPresentationController?.sourceView = sender
+        rampPickerVC.popoverPresentationController?.sourceRect = sender.bounds
         
     }
 }
