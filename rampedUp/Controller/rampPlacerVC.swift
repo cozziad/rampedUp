@@ -84,6 +84,5 @@ class rampPlacerVC: UIViewController, ARSCNViewDelegate,UIPopoverPresentationCon
         present(rampPickerVC, animated: true, completion: nil)
         rampPickerVC.popoverPresentationController?.sourceView = sender
         rampPickerVC.popoverPresentationController?.sourceRect = sender.bounds
-        
     }
 }
