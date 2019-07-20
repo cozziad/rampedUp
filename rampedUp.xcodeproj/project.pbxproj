@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7578F23822E3373D00D42ADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7578F23722E3373D00D42ADC /* AppDelegate.swift */; };
 		7578F23A22E3373D00D42ADC /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 7578F23922E3373D00D42ADC /* art.scnassets */; };
-		7578F23C22E3373D00D42ADC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7578F23B22E3373D00D42ADC /* ViewController.swift */; };
+		7578F23C22E3373D00D42ADC /* rampPlacerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7578F23B22E3373D00D42ADC /* rampPlacerVC.swift */; };
 		7578F23F22E3373D00D42ADC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7578F23D22E3373D00D42ADC /* Main.storyboard */; };
 		7578F24122E3373E00D42ADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7578F24022E3373E00D42ADC /* Assets.xcassets */; };
 		7578F24422E3373E00D42ADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7578F24222E3373E00D42ADC /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		7578F23422E3373D00D42ADC /* rampedUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rampedUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7578F23722E3373D00D42ADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7578F23922E3373D00D42ADC /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		7578F23B22E3373D00D42ADC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7578F23B22E3373D00D42ADC /* rampPlacerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rampPlacerVC.swift; sourceTree = "<group>"; };
 		7578F23E22E3373D00D42ADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7578F24022E3373E00D42ADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7578F24322E3373E00D42ADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,10 +56,9 @@
 		7578F23622E3373D00D42ADC /* rampedUp */ = {
 			isa = PBXGroup;
 			children = (
-				7578F24B22E338FC00D42ADC /* New Group */,
+				7578F24B22E338FC00D42ADC /* Controller */,
 				7578F23722E3373D00D42ADC /* AppDelegate.swift */,
 				7578F23922E3373D00D42ADC /* art.scnassets */,
-				7578F23B22E3373D00D42ADC /* ViewController.swift */,
 				7578F23D22E3373D00D42ADC /* Main.storyboard */,
 				7578F24022E3373E00D42ADC /* Assets.xcassets */,
 				7578F24222E3373E00D42ADC /* LaunchScreen.storyboard */,
@@ -68,11 +67,12 @@
 			path = rampedUp;
 			sourceTree = "<group>";
 		};
-		7578F24B22E338FC00D42ADC /* New Group */ = {
+		7578F24B22E338FC00D42ADC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7578F23B22E3373D00D42ADC /* rampPlacerVC.swift */,
 			);
-			path = "New Group";
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7578F23C22E3373D00D42ADC /* ViewController.swift in Sources */,
+				7578F23C22E3373D00D42ADC /* rampPlacerVC.swift in Sources */,
 				7578F23822E3373D00D42ADC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
